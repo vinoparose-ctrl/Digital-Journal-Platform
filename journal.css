@@ -1,0 +1,280 @@
+/* ===========================
+   DIGITAL JOURNAL PLATFORM
+   JOURNAL PAGE
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+     background:#f5f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+
+/* ================= HEADER ================= */
+
+header{
+    width:100%;
+    background:#ffffff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#5a4fcf;
+}
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#5a4fcf;
+}
+
+/* ================= BANNER ================= */
+
+.banner{
+    background:linear-gradient(135deg,#6EA8FE,#7B61FF);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.banner h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.banner p{
+    font-size:18px;
+    max-width:700px;
+    margin:auto;
+    line-height:1.7;
+}
+
+/* ================= MAIN ================= */
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+}
+
+.journal-card,
+.quote-card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.journal-card h2,
+.quote-card h2{
+    color:#7B61FF;
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    margin:18px 0 8px;
+    font-weight:600;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:#7B61FF;
+    box-shadow:0 0 10px rgba(123,97,255,.2);
+}
+
+textarea{
+    resize:none;
+}
+
+.counter{
+    margin-top:10px;
+    color:#666;
+    text-align:right;
+}
+/* ===========================
+   BUTTONS
+=========================== */
+
+.button-group{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.button-group button{
+    flex:1;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.publish-btn{
+    background:linear-gradient(135deg,#6EA8FE,#7B61FF);
+    color:white;
+}
+
+.publish-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(123,97,255,.3);
+}
+
+.draft-btn{
+    background:#f0ecff;
+    color:#7B61FF;
+}
+
+.draft-btn:hover{
+    background:#7B61FF;
+    color:white;
+}
+
+.clear-btn{
+    background:#ffebee;
+    color:#e53935;
+}
+
+.clear-btn:hover{
+    background:#e53935;
+    color:white;
+}
+
+/* ===========================
+   QUOTE CARD
+=========================== */
+
+.quote-card{
+    text-align:center;
+}
+
+.quote-card i{
+    font-size:60px;
+    color:#7B61FF;
+    margin-bottom:20px;
+}
+
+.quote-card p{
+    color:#666;
+    line-height:1.8;
+    margin:20px 0;
+}
+
+.quote-card hr{
+    margin:25px 0;
+    border:none;
+    border-top:1px solid #ddd;
+}
+
+.quote{
+    font-style:italic;
+    font-size:18px;
+    color:#444;
+}
+
+.quote-card span{
+    color:#7B61FF;
+    font-weight:600;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer{
+    margin-top:50px;
+    text-align:center;
+    background:#4d2eb7;
+    color:#fff;
+    padding:30px;
+}
+
+.footer h2{
+    margin-bottom:10px;
+}
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+    .container{
+        grid-template-columns:1fr;
+    }
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .banner h1{
+        font-size:32px;
+    }
+
+    .button-group{
+        flex-direction:column;
+    }
+
+}
+.nav-links a.active{
+    color: #6d4ae6;
+    font-weight: 600;
+}

@@ -1,0 +1,370 @@
+/* ===================================
+   DIGITAL JOURNAL PLATFORM
+   MY JOURNAL PAGE
+=================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+     background:#f5f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+
+/* ================= HEADER ================= */
+
+header{
+    width:100%;
+    background:#ffffff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#5a4fcf;
+}
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#5a4fcf;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    background:linear-gradient(135deg,#6EA8FE,#7B61FF);
+    color:#fff;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h1{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    font-size:17px;
+}
+
+/* ================= TOOLBAR ================= */
+
+.toolbar{
+    width:90%;
+    max-width:1300px;
+    margin:35px auto;
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.search-box{
+    flex:1;
+    display:flex;
+    align-items:center;
+    background:#fff;
+    border-radius:12px;
+    padding:12px 16px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.search-box i{
+    color:#7B61FF;
+    margin-right:12px;
+}
+
+.search-box input{
+    border:none;
+    outline:none;
+    width:100%;
+    font-size:15px;
+}
+
+.toolbar select{
+    padding:12px 18px;
+    border:none;
+    border-radius:12px;
+    background:#fff;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    cursor:pointer;
+}
+
+.new-btn{
+    background:#7B61FF;
+    color:#fff;
+    text-decoration:none;
+    padding:13px 22px;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.new-btn:hover{
+    background:#6548f4;
+}
+
+/* ================= JOURNAL GRID ================= */
+
+.journal-grid{
+    width:90%;
+    max-width:1300px;
+    margin:30px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.journal-card{
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.journal-card:hover{
+    transform:translateY(-8px);
+}
+
+.journal-card h2{
+    color:#7B61FF;
+    margin-bottom:12px;
+}
+
+.date{
+    display:block;
+    color:#777;
+    margin-bottom:12px;
+    font-size:14px;
+}
+
+.date i{
+    margin-right:6px;
+}
+/* ================= MOOD BADGES ================= */
+
+.mood{
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.happy{
+    background:#d1fae5;
+    color:#047857;
+}
+
+.motivate{
+    background:#dbeafe;
+    color:#1d4ed8;
+}
+
+.excited{
+    background:#fce7f3;
+    color:#be185d;
+}
+
+.calm{
+    background:#ede9fe;
+    color:#6d28d9;
+}
+
+.sad{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+/* ================= JOURNAL CONTENT ================= */
+
+.journal-card p{
+    color:#555;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+/* ================= BUTTONS ================= */
+
+.buttons{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    margin-top:20px;
+}
+
+.buttons button{
+    flex:1;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.read{
+    background:#7B61FF;
+    color:#fff;
+}
+
+.read:hover{
+    background:#6548f4;
+}
+
+.edit{
+    background:#38bdf8;
+    color:#fff;
+}
+
+.edit:hover{
+    background:#0ea5e9;
+}
+
+.delete{
+    background:#ef4444;
+    color:#fff;
+}
+
+.delete:hover{
+    background:#dc2626;
+}
+
+/* ================= EMPTY STATE ================= */
+
+.empty-state{
+    width:90%;
+    max-width:700px;
+    margin:60px auto;
+    text-align:center;
+    background:#fff;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.empty-state i{
+    font-size:60px;
+    color:#7B61FF;
+    margin-bottom:20px;
+}
+
+.empty-state h2{
+    margin-bottom:15px;
+    color:#7B61FF;
+}
+
+.empty-state p{
+    color:#666;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+    margin-top:50px;
+    text-align:center;
+    background:#4d2eb7;
+    color:#fff;
+    padding:30px;
+}
+
+.footer h2{
+    margin-bottom:10px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .toolbar{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .search-box{
+        width:100%;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .journal-grid{
+        grid-template-columns:1fr;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+
+    .buttons button{
+        width:100%;
+    }
+
+    .empty-state{
+        padding:35px 20px;
+    }
+
+}
+.nav-links a.active{
+    color: #6d4ae6;
+    font-weight: 600;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Export Journals | Digital Journal</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="export.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+    <nav class="navbar">
+
+       <div class="logo">
+
+        
+
+        <span>Digital Journal Platform</span>
+
+    </div>
+
+       <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li><a href="myjournal.html">My Journals</a></li>
+            <li><a href="calendar.html" >Calendar</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="export.html" class="active">Export</a></li>
+
+        </ul>
+
+        <a href="login.html" class="login-btn">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+    <main class="container">
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <i class="fas fa-book"></i>
+                <h2>52</h2>
+                <p>Total Journals</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fas fa-file-export"></i>
+                <h2>18</h2>
+                <p>Exports</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fas fa-database"></i>
+                <h2>12 MB</h2>
+                <p>Storage Used</p>
+            </div>
+
+        </section>
+
+        <!-- Export Section -->
+
+        <section class="export-section">
+
+            <h2>Choose Export Format</h2>
+
+            <div class="cards">
+
+                <!-- PDF -->
+
+                <div class="card">
+
+                    <div class="icon pdf">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+
+                    <h3>Export as PDF</h3>
+
+                    <p>
+                        Download your journals in a beautifully formatted
+                        PDF document.
+                    </p>
+
+                    <button id="pdfBtn">
+                        <i class="fas fa-download"></i>
+                        Export PDF
+                    </button>
+
+                </div>
+
+                <!-- TXT -->
+
+                <div class="card">
+
+                    <div class="icon txt">
+                        <i class="fas fa-file-lines"></i>
+                    </div>
+
+                    <h3>Export as TXT</h3>
+
+                    <p>
+                        Export your journals as lightweight plain text files.
+                    </p>
+
+                    <button id="txtBtn">
+                        <i class="fas fa-download"></i>
+                        Export TXT
+                    </button>
+
+                </div>
+
+                <!-- DOC -->
+
+                <div class="card">
+
+                    <div class="icon doc">
+                        <i class="fas fa-file-word"></i>
+                    </div>
+
+                    <h3>Export as DOCX</h3>
+
+                    <p>
+                        Download your journal entries as editable Word files.
+                    </p>
+
+                    <button id="docBtn">
+                        <i class="fas fa-download"></i>
+                        Export DOCX
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Backup -->
+
+        <section class="backup-section">
+
+            <h2>Backup & Restore</h2>
+
+            <div class="backup-container">
+
+                <div class="backup-card">
+
+                    <i class="fas fa-cloud-download-alt"></i>
+
+                    <h3>Download Backup</h3>
+
+                    <p>
+                        Create a complete backup of all your journals.
+                    </p>
+
+                    <button id="backupBtn">
+                        Download Backup
+                    </button>
+
+                </div>
+
+                <div class="backup-card">
+
+                    <i class="fas fa-cloud-upload-alt"></i>
+
+                    <h3>Restore Backup</h3>
+
+                    <p>
+                        Upload a backup file and restore your journal entries.
+                    </p>
+
+                    <input type="file" id="restoreFile">
+
+                    <button id="restoreBtn">
+                        Restore
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Recent Activity -->
+
+        <section class="activity">
+
+            <h2>Recent Export Activity</h2>
+
+            <div class="activity-list">
+
+                <div class="activity-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Exported "Travel Journal" as PDF</span>
+                    <small>Today</small>
+                </div>
+
+                <div class="activity-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Downloaded Full Backup</span>
+                    <small>Yesterday</small>
+                </div>
+
+                <div class="activity-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Exported "Daily Notes" as TXT</span>
+                    <small>2 Days Ago</small>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Toast Notification -->
+
+    <div class="toast" id="toast">
+        <i class="fas fa-circle-check"></i>
+        Export Completed Successfully!
+    </div>
+    <div class="back-home-container">
+    <a href="index.html" class="back-home-btn">
+        <span class="icon">🏠</span>
+        <span>Back to Home</span>
+    </a>
+</div>
+
+    <!-- JavaScript -->
+    <script src="export.js"></script>
+    <footer class="footer">
+
+    <h2>Digital Journal Platform</h2>
+
+    <p>
+        Write • Reflect • Grow
+    </p>
+
+</footer>
+
+
+</body>
+</html>

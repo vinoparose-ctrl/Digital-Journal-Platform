@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Write Journal | Digital Journal Platform</title>
+
+    <link rel="stylesheet" href="journal.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+ <header>
+        <nav class="navbar">
+<div class="logo">
+
+       
+        <span>Digital Journal Platform</span>
+
+    </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="journal.html" class="active">Journal</a></li>
+                <li><a href="myjournal.html">My Journals</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                 <li><a href="export.html">Export</a></li>
+            </ul>
+
+           
+
+        </nav>
+    </header>
+<!-- ================= HERO ================= -->
+
+<section class="banner">
+
+    <h1>Write Your Thoughts</h1>
+
+    <p>
+        Every memory matters. Capture your moments, emotions and ideas in one beautiful place.
+    </p>
+
+</section>
+
+<!-- ================= MAIN ================= -->
+
+<div class="container">
+
+    <div class="journal-card">
+
+        <h2>
+
+            <i class="fa-solid fa-pen"></i>
+
+            New Journal Entry
+
+        </h2>
+
+        <form id="journalForm">
+
+            <label>Journal Title</label>
+
+            <input
+            type="text"
+            id="title"
+            placeholder="Enter journal title">
+
+            <label>Date</label>
+
+            <input
+            type="date"
+            id="journalDate">
+
+            <label>Mood</label>
+
+            <select id="mood">
+
+                <option value="">Select Mood</option>
+
+                <option>😊 Happy</option>
+
+                <option>😍 Excited</option>
+
+                <option>😌 Calm</option>
+
+                <option>😐 Neutral</option>
+
+                <option>😔 Sad</option>
+
+                <option>😡 Angry</option>
+
+            </select>
+
+            <label>Category</label>
+
+            <select id="category">
+
+                <option>Personal</option>
+
+                <option>College</option>
+
+                <option>Travel</option>
+
+                <option>Friends</option>
+
+                <option>Family</option>
+
+                <option>Work</option>
+
+                <option>Health</option>
+
+            </select>
+
+            <label>Journal Entry</label>
+
+            <textarea
+            id="journalText"
+            rows="12"
+            placeholder="Start writing your thoughts here..."></textarea>
+
+            <p class="counter">
+
+                Characters :
+                <span id="count">0</span>
+
+            </p>
+            <label>Upload Image (Optional)</label>
+
+            <input
+            type="file"
+            id="journalImage"
+            accept="image/*">
+
+            <div class="button-group">
+
+                <button
+                type="button"
+                class="draft-btn">
+
+                    <i class="fa-solid fa-floppy-disk"></i>
+
+                    Save Draft
+
+                </button>
+
+                <button
+                type="reset"
+                class="clear-btn">
+
+                    <i class="fa-solid fa-trash"></i>
+
+                    Clear
+
+                </button>
+
+                <button
+                type="submit"
+                class="publish-btn">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    Publish Journal
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- Inspiration Card -->
+
+    <div class="quote-card">
+
+        <i class="fa-solid fa-feather-pointed"></i>
+
+        <h2>Today's Writing Prompt</h2>
+
+        <p>
+
+            "What's one small moment today that made you smile, and why do you think it stayed with you?"
+
+        </p>
+
+        <hr>
+
+        <h3>Quote of the Day</h3>
+
+        <p class="quote">
+
+            "Fill your paper with the breathings of your heart."
+
+        </p>
+
+        <span>— William Wordsworth</span>
+
+    </div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <h2>Digital Journal Platform</h2>
+
+    <p>
+        Write • Reflect • Grow
+    </p>
+
+</footer>
+
+
+<script src="journal.js"></script>
+
+</body>
+</html>

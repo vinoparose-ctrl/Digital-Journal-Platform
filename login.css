@@ -1,0 +1,160 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(135deg,#5a4fcf,#8b7cff);
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.form-box{
+    width:420px;
+    background:#ffffff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.form-box h1{
+    color:#5a4fcf;
+    margin-bottom:10px;
+    font-size:32px;
+}
+
+.form-box p{
+    color:#666;
+    margin-bottom:25px;
+}
+
+/* Login/Register Buttons */
+
+.button-box{
+    display:flex;
+    background:#f1f1f1;
+    border-radius:30px;
+    overflow:hidden;
+    margin-bottom:30px;
+}
+
+.button-box button{
+    flex:1;
+    padding:12px;
+    border:none;
+    background:transparent;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.button-box button.active{
+    background:#5a4fcf;
+    color:white;
+}
+
+/* Forms */
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:15px;
+    outline:none;
+    transition:0.3s;
+}
+
+input:focus{
+    border-color:#5a4fcf;
+    box-shadow:0 0 8px rgba(90,79,207,0.2);
+}
+
+/* Submit Button */
+
+.submit-btn{
+    margin-top:20px;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#5a4fcf;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.submit-btn:hover{
+    background:#4338ca;
+    transform:translateY(-2px);
+}
+
+/* Back to Home */
+
+.home-link{
+    margin-top:25px;
+}
+
+.home-link a{
+    text-decoration:none;
+    color:#5a4fcf;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.home-link a:hover{
+    text-decoration:underline;
+}
+
+/* Responsive */
+
+@media(max-width:480px){
+
+    .form-box{
+        width:100%;
+        padding:30px 20px;
+    }
+
+    .form-box h1{
+        font-size:28px;
+    }
+
+    .button-box button{
+        font-size:14px;
+        padding:10px;
+    }
+
+    input,
+    .submit-btn{
+        font-size:15px;
+    }
+
+}
+.submit-btn:disabled{
+    opacity:0.7;
+    cursor:not-allowed;
+}

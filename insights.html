@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mood Insights | Digital Journal</title>
+
+<link rel="stylesheet" href="insights.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+<header>
+        <nav class="navbar">
+<div class="logo">
+
+       
+        <span>Digital Journal Platform</span>
+
+    </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="myjournal.html">My Journals</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="insights.html" class="active">Insights</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                 <li><a href="export.html">Export</a></li>
+            </ul>
+
+           
+
+        </nav>
+    </header>
+<div class="container">
+
+<div class="banner">
+
+<h1>Mood Insights</h1>
+
+<p>
+Track your emotions and understand your journaling habits
+through beautiful analytics.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h2>82%</h2>
+<p>Positive Mood</p>
+</div>
+
+<div class="card">
+<h2>46</h2>
+<p>Total Journals</p>
+</div>
+
+<div class="card">
+<h2>18</h2>
+<p>Writing Streak</p>
+</div>
+
+<div class="card">
+<h2>7.8</h2>
+<p>Average Mood Score</p>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2 class="section-title">
+Weekly Mood Trend
+</h2>
+
+<div class="chart-card">
+<canvas id="weeklyChart"></canvas>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2 class="section-title">
+Monthly Mood Trend
+</h2>
+
+<div class="chart-card">
+<canvas id="monthlyChart"></canvas>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2 class="section-title">
+Mood Distribution
+</h2>
+
+<div class="chart-card">
+<canvas id="pieChart"></canvas>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2 class="section-title">
+Activity Statistics
+</h2>
+
+<div class="stats">
+
+<div class="stat-box">
+<h1>95%</h1>
+<p>Consistency</p>
+</div>
+
+<div class="stat-box">
+<h1>120</h1>
+<p>Hours Reflected</p>
+</div>
+
+<div class="stat-box">
+<h1>15</h1>
+<p>Most Used Tags</p>
+</div>
+
+<div class="stat-box">
+<h1>24</h1>
+<p>Happy Entries</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2 class="section-title">
+Top Mood Summary
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h2>😊 Happy</h2>
+<p>Most frequent emotion this month.</p>
+</div>
+
+<div class="card">
+<h2>😌 Calm</h2>
+<p>Second most common feeling.</p>
+</div>
+
+<div class="card">
+<h2>😐 Neutral</h2>
+<p>Balanced emotional state.</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer class="footer">
+
+    <h2>Digital Journal Platform</h2>
+
+    <p>
+        Write • Reflect • Grow
+    </p>
+
+</footer>
+
+
+<script src="charts.js"></script>
+
+</body>
+</html>

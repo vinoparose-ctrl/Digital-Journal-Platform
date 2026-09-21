@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Journals | Digital Journal Platform</title>
+
+    <link rel="stylesheet" href="myjournal.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+        <nav class="navbar">
+<div class="logo">
+
+       
+        <span>Digital Journal Platform</span>
+
+    </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="myjournal.html" class="active">My Journals</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                 <li><a href="export.html">Export</a></li>
+            </ul>
+
+           
+
+        </nav>
+    </header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <h1>📖 My Journal Collection</h1>
+
+    <p>
+
+        Every page tells a story. Revisit your memories,
+        reflect on your journey, and celebrate your growth.
+
+    </p>
+
+</section>
+
+<!-- ================= SEARCH & FILTER ================= -->
+
+<section class="toolbar">
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="Search your journals...">
+
+    </div>
+
+    <select id="moodFilter">
+
+        <option value="all">All Moods</option>
+        <option>😊 Happy</option>
+        <option>😌 Calm</option>
+        <option>💪 Motivated</option>
+        <option>😔 Sad</option>
+        <option>😍 Excited</option>
+
+    </select>
+
+    <select id="sortJournal">
+
+        <option>Newest First</option>
+        <option>Oldest First</option>
+
+    </select>
+
+    <a href="journal.html" class="new-btn">
+
+        <i class="fa-solid fa-plus"></i>
+
+        New Journal
+
+    </a>
+
+</section>
+
+<!-- ================= JOURNALS ================= -->
+
+<section class="journal-grid">
+
+    <div class="journal-card">
+
+        <h2>🌸 Peaceful Morning</h2>
+
+        <span class="date">
+            <i class="fa-solid fa-calendar-days"></i>
+            2 July 2026
+        </span>
+
+        <span class="mood happy">😊 Happy</span>
+
+        <p>
+
+            Started my morning with meditation,
+            fresh air and a beautiful sunrise.
+            It felt peaceful and refreshing...
+
+        </p>
+
+        <div class="buttons">
+
+            <button class="read">
+                <i class="fa-solid fa-book-open"></i>
+                Read
+            </button>
+
+            <button class="edit">
+                <i class="fa-solid fa-pen"></i>
+                Edit
+            </button>
+
+            <button class="delete">
+                <i class="fa-solid fa-trash"></i>
+                Delete
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="journal-card">
+
+        <h2>📚 Study Session</h2>
+
+        <span class="date">
+            <i class="fa-solid fa-calendar-days"></i>
+            1 July 2026
+        </span>
+
+        <span class="mood motivate">💪 Motivated</span>
+
+        <p>
+
+            Completed my web development project
+            and learned many new concepts today.
+            Feeling productive and confident...
+
+        </p>
+
+        <div class="buttons">
+
+            <button class="read">
+                <i class="fa-solid fa-book-open"></i>
+                Read
+            </button>
+
+            <button class="edit">
+                <i class="fa-solid fa-pen"></i>
+                Edit
+            </button>
+
+            <button class="delete">
+                <i class="fa-solid fa-trash"></i>
+                Delete
+            </button>
+
+        </div>
+
+    </div>
+<div class="journal-card">
+
+        <h2>☕ Coffee with Friends</h2>
+
+        <span class="date">
+            <i class="fa-solid fa-calendar-days"></i>
+            28 June 2026
+        </span>
+
+        <span class="mood excited">😍 Excited</span>
+
+        <p>
+
+            Met my friends after a long time.
+            We laughed, shared stories, and created
+            unforgettable memories together...
+
+        </p>
+
+        <div class="buttons">
+
+            <button class="read">
+                <i class="fa-solid fa-book-open"></i>
+                Read
+            </button>
+
+            <button class="edit">
+                <i class="fa-solid fa-pen"></i>
+                Edit
+            </button>
+
+            <button class="delete">
+                <i class="fa-solid fa-trash"></i>
+                Delete
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="journal-card">
+
+        <h2>🌙 Late Night Thoughts</h2>
+
+        <span class="date">
+            <i class="fa-solid fa-calendar-days"></i>
+            25 June 2026
+        </span>
+
+        <span class="mood calm">😌 Calm</span>
+
+        <p>
+
+            Sometimes the quietest nights bring
+            the loudest thoughts. Tonight I wrote
+            everything my heart wanted to say...
+
+        </p>
+
+        <div class="buttons">
+
+            <button class="read">
+                <i class="fa-solid fa-book-open"></i>
+                Read
+            </button>
+
+            <button class="edit">
+                <i class="fa-solid fa-pen"></i>
+                Edit
+            </button>
+
+            <button class="delete">
+                <i class="fa-solid fa-trash"></i>
+                Delete
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= EMPTY STATE ================= -->
+
+<section class="empty-state">
+
+    <i class="fa-solid fa-book-open"></i>
+
+    <h2>No More Journals</h2>
+
+    <p>
+
+        Start writing today and build your own
+        collection of beautiful memories.
+
+    </p>
+
+    <a href="journal.html" class="new-btn">
+
+        <i class="fa-solid fa-pen"></i>
+
+        Write Your First Journal
+
+    </a>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <h2>Digital Journal Platform</h2>
+
+    <p>
+        Write • Reflect • Grow
+    </p>
+
+</footer>
+
+
+<script src="myjournal.js"></script>
+
+</body>
+</html>

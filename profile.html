@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile | Digital Journal Platform</title>
+
+    <link rel="stylesheet" href="profile.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+        <nav class="navbar">
+<div class="logo">
+
+       
+        <span>Digital Journal Platform</span>
+
+    </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="myjournal.html">My Journals</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+                 <li><a href="export.html">Export</a></li>
+            </ul>
+
+           
+
+        </nav>
+    </header>
+
+<section class="profile-banner">
+
+    <h1>My Profile</h1>
+
+    <p>
+        Manage your personal information and account settings.
+    </p>
+
+</section>
+
+<div class="container">
+
+    <!-- LEFT PROFILE CARD -->
+
+    <div class="profile-card">
+
+        <div class="profile-image">
+<img src="https://cdn-icons-png.flaticon.com/512/847/847969.png"
+     id="previewImage"
+     alt="Default Profile">
+
+            <label for="uploadImage">
+
+                <i class="fa-solid fa-camera"></i>
+
+            </label>
+
+            <input
+            type="file"
+            id="uploadImage"
+            accept="image/*">
+
+        </div>
+
+        <h2 id="userName"></h2>
+
+        <p>Welcome to your Profile!</p>
+
+        <div class="profile-stats">
+
+            <div>
+
+                <h3>0</h3>
+
+                <span>Entries</span>
+
+            </div>
+
+            <div>
+
+                <h3>0</h3>
+
+                <span>Streak</span>
+
+            </div>
+
+            <div>
+
+                <h3>0</h3>
+
+                <span>Badges</span>
+
+            </div>
+
+        </div>
+
+        <button class="logout-btn">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </button>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="profile-content">
+
+        <div class="form-grid">
+
+            <!-- ACCOUNT INFORMATION -->
+
+            <div class="card">
+
+                <h2>
+
+                    <i class="fa-solid fa-user"></i>
+
+                    Account Information
+
+                </h2>
+
+                <form>
+
+                    <label>Full Name</label>
+
+                    <input
+                    type="text"
+                    placeholder="Enter your full name">
+
+                    <label>Email Address</label>
+
+                    <input
+                    type="email"
+                    placeholder="Enter your email">
+
+                    <label>Phone Number</label>
+
+                    <input
+                    type="text"
+                    placeholder="+91 XXXXX XXXXX">
+                    <label>Date of Birth</label>
+
+                    <input
+                    type="date">
+
+                    <button type="submit" class="save-btn">
+                        <i class="fa-solid fa-floppy-disk"></i>
+                        Save Changes
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- CHANGE PASSWORD -->
+
+            <div class="card">
+
+                <h2>
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    Change Password
+
+                </h2>
+
+                <form>
+
+                    <label>Current Password</label>
+
+                    <input
+                    type="password"
+                    placeholder="Current Password">
+
+                    <label>New Password</label>
+
+                    <input
+                    type="password"
+                    placeholder="New Password">
+
+                    <label>Confirm Password</label>
+
+                    <input
+                    type="password"
+                    placeholder="Confirm Password">
+
+                    <button type="submit" class="save-btn">
+
+                        <i class="fa-solid fa-key"></i>
+
+                        Update Password
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- PREFERENCES -->
+
+        <div class="card preferences">
+
+            <h2>
+
+                <i class="fa-solid fa-gear"></i>
+
+                Preferences
+
+            </h2>
+
+            <div class="preference-item">
+
+                <span>Email Notifications</span>
+
+                <input type="checkbox" checked>
+
+            </div>
+
+            <div class="preference-item">
+
+                <span>Daily Writing Reminder</span>
+
+                <input type="checkbox" checked>
+
+            </div>
+
+            <div class="preference-item">
+
+                <span>Dark Mode</span>
+
+                <input type="checkbox">
+
+            </div>
+
+            <div class="preference-item">
+
+                <span>Auto Backup Journals</span>
+
+                <input type="checkbox" checked>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+
+    <h2>Digital Journal Platform</h2>
+
+    <p>
+        Write • Reflect • Grow
+    </p>
+
+</footer>
+
+
+<script src="profile.js"></script>
+
+</body>
+</html>

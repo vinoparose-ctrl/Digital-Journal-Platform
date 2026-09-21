@@ -1,0 +1,337 @@
+/* ==========================
+   Google Font
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+     background:#f5f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+
+/* ================= HEADER ================= */
+
+header{
+    width:100%;
+    background:#ffffff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#5a4fcf;
+}
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#5a4fcf;
+}
+
+/* ==========================
+   Container
+========================== */
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
+}
+
+/* ==========================
+   Banner
+========================== */
+
+.banner{
+    background:linear-gradient(135deg,#5a4fcf,#8b7cff);
+    color:white;
+    padding:45px;
+    border-radius:20px;
+    margin-bottom:35px;
+    box-shadow:0 10px 25px rgba(90,79,207,.25);
+}
+
+.banner h1{
+    font-size:38px;
+}
+
+.banner p{
+    margin-top:12px;
+    opacity:.95;
+    font-size:17px;
+}
+
+/* ==========================
+   Cards
+========================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+}
+
+.card h2{
+    color:#5a4fcf;
+    font-size:32px;
+}
+
+.card p{
+    margin-top:10px;
+    color:#666;
+}
+
+/* ==========================
+   Sections
+========================== */
+
+.section{
+    margin-top:45px;
+}
+
+.section-title{
+    font-size:30px;
+    color:#5a4fcf;
+    margin-bottom:20px;
+}
+
+/* ==========================
+   Charts
+========================== */
+
+.chart-card{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+/* ==========================
+   Charts
+========================== */
+
+/* Common chart card for Weekly & Monthly charts */
+.chart-card{
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    width: 100%;
+    max-width: 850px;
+    height: 380px;
+    margin: 25px auto;
+}
+
+/* Weekly & Monthly charts */
+#weeklyChart,
+#monthlyChart{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Pie Chart */
+#pieChart{
+    display: block;
+    width: 340px !important;
+    height: 340px !important;
+    margin: 0 auto;
+}
+
+/* ==========================
+   Statistics
+========================== */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.stat-box{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:18px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.stat-box:hover{
+    transform:translateY(-5px);
+}
+
+.stat-box h1{
+    color:#5a4fcf;
+    font-size:36px;
+}
+
+.stat-box p{
+    color:#666;
+    margin-top:8px;
+}
+
+/* ==========================
+   Export Cards
+========================== */
+
+.export-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.export-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.export-card:hover{
+    transform:translateY(-8px);
+}
+
+.export-card i{
+    font-size:55px;
+    color:#5a4fcf;
+    margin-bottom:15px;
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+.btn{
+    background:#5a4fcf;
+    color:white;
+    border:none;
+    padding:14px 28px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#4338ca;
+    transform:translateY(-2px);
+}
+
+/* ==========================
+   Footer
+========================== */
+
+.footer{
+    margin-top:50px;
+    text-align:center;
+    background:#4d2eb7;
+    color:#fff;
+    padding:30px;
+}
+
+.footer h2{
+    margin-bottom:10px;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+    gap:18px;
+    padding:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.banner{
+    padding:30px;
+}
+
+.banner h1{
+    font-size:30px;
+}
+
+.container{
+    width:95%;
+}
+
+}
+
+@media(max-width:600px){
+
+.banner h1{
+    font-size:26px;
+}
+
+.section-title{
+    font-size:24px;
+}
+
+.logo{
+    font-size:24px;
+}
+
+.profile{
+    font-size:32px;
+}
+
+}
+.nav-links a.active{
+    color: #6d4ae6;
+    font-weight: 600;
+}
+/* Chart Card */

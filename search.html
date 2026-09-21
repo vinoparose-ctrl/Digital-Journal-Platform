@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Search Memories | Digital Journal Platform</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="search.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar">
+<div class="logo">
+
+       
+        <span>Digital Journal Platform</span>
+
+    </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="myjournal.html">My Journals</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="search.html" class="active">Search</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                 <li><a href="export.html">Export</a></li>
+            </ul>
+
+           
+
+        </nav>
+    </header>
+
+    <!-- ================= MAIN CONTAINER ================= -->
+
+    <div class="container">
+
+        <!-- Banner -->
+
+        <section class="banner">
+
+            <h1>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search Your Memories
+            </h1>
+
+            <p>
+                Quickly find journal entries by keywords, moods, tags, or dates.
+            </p>
+
+        </section>
+
+        <!-- Search Box -->
+
+        <section class="search-box">
+
+            <input type="text" id="searchInput"
+                placeholder="Search your journals, memories or tags...">
+
+            <button id="searchBtn">
+                <i class="fa-solid fa-search"></i>
+                Search
+            </button>
+
+        </section>
+
+        <!-- Popular Tags -->
+
+        <section>
+
+            <h2 class="section-title">
+                Popular Tags
+            </h2>
+
+            <div class="tags">
+
+                <span class="tag">Family</span>
+
+                <span class="tag">College</span>
+
+                <span class="tag">Friends</span>
+
+                <span class="tag">Vacation</span>
+
+                <span class="tag">Travel</span>
+
+                <span class="tag">Work</span>
+
+                <span class="tag">Personal</span>
+
+                <span class="tag">Motivation</span>
+
+            </div>
+
+        </section>
+
+        <!-- Search Results -->
+
+        <section>
+
+            <h2 class="section-title">
+
+                Recent Memories
+
+            </h2>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <h3>
+                        🏖 Goa Vacation
+                    </h3>
+
+                    <p>
+                        Spent five unforgettable days exploring beaches,
+                        trying local food, and enjoying sunsets with friends.
+                    </p>
+
+                    <div class="bottom">
+
+                        <span class="badge">
+                            Vacation
+                        </span>
+
+                        <small>
+                            14 June 2026
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+                        ☀ Summer Holidays
+                    </h3>
+
+                    <p>
+                        Visited grandparents and spent quality time with family.
+                        It was one of the happiest weeks this year.
+                    </p>
+
+                    <div class="bottom">
+
+                        <span class="badge">
+                            Family
+                        </span>
+
+                        <small>
+                            02 May 2026
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+                        🎓 College Memories
+                    </h3>
+
+                    <p>
+                        Completed our mini project and celebrated with classmates
+                        after the final presentation.
+                    </p>
+
+                    <div class="bottom">
+
+                        <span class="badge">
+                            College
+                        </span>
+
+                        <small>
+                            19 April 2026
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+                        ☕ Coffee Evening
+                    </h3>
+
+                    <p>
+                        Had meaningful conversations with friends over coffee.
+                        Definitely a day worth remembering.
+                    </p>
+
+                    <div class="bottom">
+
+                        <span class="badge">
+                            Friends
+                        </span>
+
+                        <small>
+                            09 March 2026
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- No Results Message -->
+
+        <div id="noResults" class="no-results">
+
+            <i class="fa-solid fa-folder-open"></i>
+
+            <h3>No memories found.</h3>
+
+            <p>Try searching with another keyword.</p>
+
+        </div>
+
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+
+   <footer class="footer">
+
+    <h2>Digital Journal Platform</h2>
+
+    <p>
+        Write • Reflect • Grow
+    </p>
+
+</footer>
+
+    <!-- JavaScript -->
+
+    <script src="js/search.js"></script>
+
+</body>
+
+</html>
